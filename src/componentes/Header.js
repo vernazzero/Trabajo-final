@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 const Header = () => {
 
@@ -10,15 +11,15 @@ const Header = () => {
 
         <div className="container">
  
-            <a href="#" id="menu"><i className="fa-solid fa-bars"></i></a>
+            <a href="#" id="links"><i className="fa-solid fa-bars"></i></a>
 
             <h1>Gaming City</h1>
 
         <div className="cartUser">
 
-            <a href="#" id="user"><i className="fa-solid fa-user"></i></a>
+            <Link to='login'><a href="#" id="links"><i className="fa-solid fa-user"></i></a></Link>
 
-            <a href="#" id="cart"><i className="fa-solid fa-cart-shopping"></i></a>
+            <a href="#" className="cart" id="links"><i className="fa-solid fa-cart-shopping"></i></a>
 
         </div>
 

@@ -1,12 +1,13 @@
 import './App.css';
 import { useState, useEffect } from "react";
-import Header from './componentes/Header';
-import Hero from './componentes/Hero';
-import About from './componentes/About';
-import Caracteristicas from './componentes/Caracteristicas';
-import Fin from './componentes/Fin';
-import Footer from './componentes/Footer';
+import Inicio from './componentes/Inicio'
+import Login from './componentes/Login';
 import { obtenerProductos } from './FireBase';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
 
@@ -20,33 +21,18 @@ function App() {
 
   return(
 
-<>
+<BrowserRouter>
 
-<div className="imgContainer"></div> 
+<Routes>
 
-<Header/>
+  <Route path='/' element={<Inicio/>}/>
+  <Route path='login' element={<Login/>}/>
 
-<main>
+</Routes>
 
-<Hero/>
+</BrowserRouter>
 
-<About/>
-
-<h3>Nuestros productos</h3>
-
-<div id="productos"></div>
-
-<Caracteristicas/>
-
-<Fin/>
-
-</main>
-
-<Footer/>
-      
-    </>
-
-  );
+);
 
 }
 

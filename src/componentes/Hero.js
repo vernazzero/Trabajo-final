@@ -8,7 +8,7 @@ const Hero = () => {
 
         <h2>Los mejores componentes</h2>
 
-        <a href="#productos" className="btn">Productos</a>
+        <a href="#productos" className="btn-productos-login">Productos</a>
 
         </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Fin = () => {
 
@@ -7,7 +8,7 @@ const Fin = () => {
     <div className="fin">
 
     <h2>No dudes en hacer tu consulta!</h2>
-    <a href="login.html" className="btn">Ingresar</a>
+    <Link to="login"><a href="#" className="btn-productos-login">Ingresar</a></Link>
 
     </div>
 
