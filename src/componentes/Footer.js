@@ -9,9 +9,9 @@ const Footer = () => {
     <div className="footer" id="contacto">
 
     <h4>Nuestas redes</h4>
-    <a href="https://twitter.com/" className="redes"><i className="fa-brands fa-twitter"></i></a>
-    <a href="https://www.instagram.com/"className="redes"><i className="fa-brands fa-instagram"></i></a>
-    <a href="https://www.facebook.com/" className="redes"><i className="fa-brands fa-facebook"></i></a>
+    <a href="https://twitter.com/" className="redes" target= "_blank"><i className="fa-brands fa-twitter"></i></a>
+    <a href="https://www.instagram.com/"className="redes" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/" className="redes" target="_blank"><i className="fa-brands fa-facebook"></i></a>
 
     </div>
 
