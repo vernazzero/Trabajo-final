@@ -1,8 +1,6 @@
 import './App.css';
-import { useState, useEffect } from "react";
 import Inicio from './componentes/Inicio'
 import Login from './componentes/Login';
-import { obtenerProductos } from './FireBase';
 import {
   BrowserRouter,
   Routes,
@@ -10,14 +8,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-
-  const [productos, setProductos] = useState([]);
-
-  useEffect(()=>{
-
-    obtenerProductos()
-
-  },[])
 
   return(
 
