@@ -110,7 +110,7 @@ header .container2 {
     height: 100px;
     text-align: center;
     padding: 20px;
-    margin-top: 130px;
+    margin-top: 112px;
     background-color: rgb(253, 213, 249);
 
 
@@ -123,41 +123,94 @@ header .container2 {
 
 }
 
+/* MEDIA 320px */
+
+@media (max-width:320px) {
+
+    .formulario {
+
+        width: 300px;
+    }
+    
+}
+
+/* MEDIA 375px */
+
+@media (max-width:375px) {
+
+    .formulario {
+
+        width: 300px;
+    }
+    
+}
+
+
 /* MEDIA 768px */
 
 @media (min-width:768px) {
 
-    #cart {
+    .footer-login {
 
-        margin-left: 15px;
+        margin-top: 95px;
+        height: 135px;
 
     }
 
-    .footer-login {
+    .formulario {
 
-        height: 118px;
+        margin-top: 20px;
+        width: 450px;
+        height: 40px;
+        font-size: 20px;
+    
+    }
 
+    .btn {
+
+        font-size: 30px;
+        width: 180px;
+        height: 50px;
+    }
+
+    .btnA {
+
+        padding: 50px;
+    }
+
+    .btnA a {
+
+        font-size: 35px;
     }
 
     h1 {
 
-        font-size: 40px;
+        font-size: 60px;
     }
 
     h2 {
 
-        font-size: 40px;
-        padding: 15px;
+        font-size: 55px;
+        padding: 25px;
     
     }
 
     p {
 
-       padding: 20px;
+       padding: 25px;
+       font-size: 30px;
+
+    }
+
+    a {
+
+        font-size: 35px;
 
     }
 
 }
+
+    
 
 /* MEDIA 1024px */
 
@@ -165,7 +218,7 @@ header .container2 {
 
     .footer-login {
 
-        margin-top: 120px;
+        margin-top: 110px;
         height: 135px;
 
     }
@@ -227,9 +280,14 @@ header .container2 {
 
 @media (min-width:1440px) {
 
+    .iniciarSesion {
+
+        margin-top: 150px;
+    }
+
     .footer-login {
 
-        margin-top: 195px;
+        margin-top: 452px;
         height: 152px;
 
     }

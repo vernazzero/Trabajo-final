@@ -10,7 +10,7 @@ const About = () => {
 
     <div className="containerImg3"></div>
 
-    <p>Somos <span>Gaming City</span>, una pagina dedicada al mundo gamer, especializada en la venta de hardware. Nuestros clientes nos buscan porque tenemos los mejores componentes que puedas encontrar.</p>
+    <p>Somos <span className="span">Gaming City</span>, una pagina dedicada al mundo gamer, especializada en la venta de hardware. Nuestros clientes nos buscan porque tenemos los mejores componentes que puedas encontrar.</p>
 
     </div>
 
