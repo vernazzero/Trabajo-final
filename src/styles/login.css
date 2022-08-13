@@ -110,7 +110,7 @@ header .container2 {
     height: 100px;
     text-align: center;
     padding: 20px;
-    margin-top: 112px;
+    margin-top: 130px;
     background-color: rgb(253, 213, 249);
 
 
@@ -279,11 +279,6 @@ header .container2 {
 /* MEDIA 1440px */
 
 @media (min-width:1440px) {
-
-    .iniciarSesion {
-
-        margin-top: 150px;
-    }
 
     .footer-login {
 

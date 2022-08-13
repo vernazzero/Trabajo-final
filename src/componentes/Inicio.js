@@ -11,11 +11,13 @@ import CarritoVacio from './CarritoVacio';
 import ProductosEnCarrito from "./ProductosEnCarrito";
 import { Link } from "react-router-dom";
 import App from "../App";
+import Swal from 'sweetalert2'
 
 const Inicio = () =>{
 
     const [productos, setProductos] = useState([])
     const [isOpen, setIsOpen] = useState(false)
+    const [isAbierto, setIsAbierto] = useState(false)
     const [cart, setCart] = useState([])
 
     const buscarProductos = (id) => {
@@ -29,12 +31,31 @@ const Inicio = () =>{
 
       const productoEnCarrito = buscarProductos(e.target.id)
       setCart([...cart, productoEnCarrito])
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Agregado al carrito',
+        showConfirmButton: false,
+        timer: 1600
+      })
 
+    }
+
+    const borrarProducto = (id) => {
+
+      const sacarProducto = cart.filter(item => item.id !==id)
+      setCart(sacarProducto)
+      
     }
 
     const variants = {
       open: { opacity: 1, x: 0 },
-      closed: { opacity: 0, x: "50vw" },
+      closed: { opacity: 0, x: "60vw" },
+    }
+
+    const menu = {
+      abierto: { opacity: 1, x: 0 },
+      cerrado: { opacity: 0, x: "-40vw" },
     }
 
     const obtenerProductos = async () => {
@@ -50,7 +71,6 @@ const Inicio = () =>{
       obtenerProductos()
   
     },[])
-  
 
     return(
 
@@ -58,7 +78,7 @@ const Inicio = () =>{
 
 <div className="imgContainer"></div> 
 
-<Header setIsOpen={setIsOpen} isOpen={isOpen}/>
+<Header setIsOpen={setIsOpen} isOpen={isOpen} setIsAbierto={setIsAbierto} isAbierto={isAbierto} borrarProducto={borrarProducto}/>
 
 <motion.div className="mostrarCarrito" cart={cart}
 
@@ -66,7 +86,23 @@ const Inicio = () =>{
       variants={variants}
       transition={{bounce: 0}}>
 
-      {cart.length > 0 ? <ProductosEnCarrito cart={cart}/> : <CarritoVacio/> }
+      {cart.length > 0 ? <ProductosEnCarrito cart={cart} borrarProducto={borrarProducto} /> : <CarritoVacio/> }
+
+</motion.div>
+
+<motion.div className="mostrarMenu" cart={cart}
+
+      animate={isAbierto ? "abierto" : "cerrado"}
+      variants={menu}
+      transition={{bounce: 0}}>
+
+        <ul className="listas">
+
+          <li><a href="#productos" className="secciones">Nuestos productos</a></li>
+          <li><a href="#about" className="secciones">Acerca de nosotros</a></li>
+          <li><a href="#contacto" className="secciones">Contactanos</a></li>
+
+        </ul>
 
 </motion.div>
 
@@ -78,7 +114,7 @@ const Inicio = () =>{
 
 <h3 id="productos">Nuestros productos</h3>
 
-<div className="containerProductos" >
+<div className="containerProductos">
 
 {productos.map((producto)=>{
 
@@ -115,7 +151,6 @@ const Inicio = () =>{
 <Footer/>
 
 </>
-
 
 )
 

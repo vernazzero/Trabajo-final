@@ -9,7 +9,6 @@ const CarritoVacio = () => {
 
             <p className={styles.carritoVacio}>Carrito vacio.</p>
 
-
         </div>
 
 

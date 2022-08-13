@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"
 
-const Header = ({setIsOpen, isOpen}) => {
+const Header = ({setIsOpen, isOpen, setIsAbierto, isAbierto}) => {
 
     return (
 
@@ -11,7 +11,7 @@ const Header = ({setIsOpen, isOpen}) => {
 
         <div className="container">
  
-            <a href="#" className="menu" id="links"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" className="menu" id="links" onClick={()=>setIsAbierto(!isAbierto)}><i className="fa-solid fa-bars"></i></a>
 
             <h1>Gaming City</h1>
 

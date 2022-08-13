@@ -64,11 +64,38 @@ p {
 
 .mostrarCarrito {
 
+  overflow-y: scroll;
   position: fixed;
-  top: 70px;
+  top: 80px;
   right: 0vw;
-  width: 50vw;
-  height: 100vh;
+  width: 60vw;
+  height: 90vh;
+  background-color: rgb(253, 213, 249);
+  border-radius: 10px;
+
+}
+
+.listas {
+
+  padding: 5px 0px;
+
+}
+
+.secciones {
+
+  padding: 20px 0px;
+  font-weight: bold;
+  display: block;
+
+}
+
+.mostrarMenu {
+
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 40vw;
+  height: 40vh;
   background-color: rgb(253, 213, 249);
   border-radius: 10px;
 
@@ -96,7 +123,7 @@ p {
     width: 200px;
     margin-top: 40px;
     padding: 50px;
-    background-color: rgb(250, 245, 231);
+    background-color: rgb(250, 249, 245);
     border-bottom: solid 2px rgb(202, 196, 177);
 
 
@@ -185,30 +212,58 @@ header .container {
 
 }
 
+.contenedorCarrito {
 
-/* .vaciar-carrito {
+  display: flex;
+  margin-bottom: 20px;
 
-  border-radius: 10px;
-  border: none;
-  background-color: rgb(149, 77, 216);
+}
+
+.imgCarrito {
+
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.nombreYprecio p{
+
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
   font-weight: bold;
-  height: 30px;
-  margin-left: 10px ;
+}
+
+.nombreYprecio .precio {
+
+  margin-left: 25px;
+  color: rgb(62, 116, 62);
+  
+}
+
+.precioTotal {
+
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
 
 }
 
 .btn-eliminar {
 
-  height: 20px;
-  width: 20px;
-  margin-left: 30px;
-  margin-top: 10px;
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+  margin-top: 5px;
   color:rgb(255, 0, 0);
   background-color: rgb(253, 213, 249);
   border: none;
+  font-weight: bold;
   cursor: pointer;
 
-} */
+}
 
 .hero {
 
@@ -373,16 +428,22 @@ header .container {
 
   }
 
-  h3 {
+  .mostrarCarrito {
 
-      margin-top: -150px;
-      margin-bottom: 50px;
+    top: 120px;
+    width: 40vw;
+
+  }
+
+  .mostrarMenu {
+
+    top: 120px;
 
   }
 
   .tituloAbout {
 
-    margin-top: 500px;
+    margin-top: -220px;
   }
 
   .cart {
@@ -398,7 +459,7 @@ header .container {
 
   .about {
 
-      height: 90vh;
+      height: 120vh;
 
   }
 
@@ -455,9 +516,21 @@ header .container {
     font-size: 30px;
   }
 
+  .mostrarCarrito {
+
+    width: 30vw;
+
+  }
+
+  .mostrarMenu {
+
+    width: 30vw;
+
+  }
+
   .tituloAbout {
 
-      margin-top: 580px;
+      margin-top: -150px;
 
   }
 
@@ -480,7 +553,7 @@ header .container {
 
   .about {
 
-      height: 100vh;
+      height: 130vh;
 
   }
 
@@ -551,10 +624,15 @@ header .container {
     font-size: 35px;
   }
 
+  .mostrarCarrito {
+
+    width: 22vw;
+    
+  }
+
   .tituloAbout {
 
-      font-size: 35px;
-      margin-top: 1120px;
+      margin-top: 0;
       font-size: 40px;
 
   }
@@ -584,14 +662,13 @@ header .container {
 
   .about {
 
-    height: 100vh;
+    height: 165vh;
 
   }
 
   .containerImg3 {
 
       height: 1100px;
-      
 
   }
 
