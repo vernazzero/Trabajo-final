@@ -1,11 +1,11 @@
-import './App.css';
+import './App.css'
 import Inicio from './componentes/Inicio'
-import Login from './componentes/Login';
+import Login from './componentes/Login'
 import {
   BrowserRouter,
   Routes,
   Route,
-} from "react-router-dom";
+} from "react-router-dom"
 
 function App() {
 
@@ -22,8 +22,8 @@ function App() {
 
 </BrowserRouter>
 
-);
+)
 
 }
 
-export default App;
+export default App

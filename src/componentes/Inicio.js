@@ -1,16 +1,16 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React from "react"
+import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import Header from "./Header";
-import Hero from './Hero';
-import About from './About';
-import Caracteristicas from './Caracteristicas';
-import Fin from './Fin';
-import Footer from './Footer';
-import CarritoVacio from './CarritoVacio';
-import ProductosEnCarrito from "./ProductosEnCarrito";
-import { Link } from "react-router-dom";
-import App from "../App";
+import Header from "./Header"
+import Hero from './Hero'
+import About from './About'
+import Caracteristicas from './Caracteristicas'
+import Fin from './Fin'
+import Footer from './Footer'
+import CarritoVacio from './CarritoVacio'
+import ProductosEnCarrito from "./ProductosEnCarrito"
+import { Link } from "react-router-dom"
+import App from "../App"
 import Swal from 'sweetalert2'
 
 const Inicio = () =>{
