@@ -64,6 +64,7 @@ const Inicio = () =>{
         showConfirmButton: true,
         timer: 0
       })
+      vaciarCarrito()
 
     }
 
