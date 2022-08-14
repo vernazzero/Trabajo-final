@@ -106,6 +106,8 @@ const Inicio = () =>{
       variants={variants}
       transition={{bounce: 0}}>
 
+      <button className="cerrar" onClick={()=>setIsOpen(!isOpen)}><i className="fa-solid fa-xmark"></i></button>
+
       {cart.length > 0 ? <ProductosEnCarrito cart={cart} borrarProducto={borrarProducto} comprar={comprar} vaciarCarrito={vaciarCarrito}/> : <CarritoVacio/> }
 
 </motion.div>
@@ -115,6 +117,8 @@ const Inicio = () =>{
       animate={isAbierto ? "abierto" : "cerrado"}
       variants={menu}
       transition={{bounce: 0}}>
+
+        <button className="cerrar" onClick={()=>setIsAbierto(!isAbierto)}><i className="fa-solid fa-xmark"></i></button>
 
         <ul className="listas">
 

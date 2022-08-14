@@ -295,6 +295,19 @@ header .container {
 
 }
 
+.cerrar {
+
+  margin-left: 90%;
+  color:rgb(255, 0, 0);
+  background-color: rgb(253, 213, 249);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0;
+
+}
+
 .hero {
 
   text-align: center;
