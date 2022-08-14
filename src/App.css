@@ -77,7 +77,8 @@ p {
 
 .listas {
 
-  padding: 5px 0px;
+  padding: 0;
+  margin-top: -5px;
 
 }
 
@@ -95,7 +96,7 @@ p {
   top: 80px;
   left: 0;
   width: 40vw;
-  height: 40vh;
+  height: 38vh;
   background-color: rgb(253, 213, 249);
   border-radius: 10px;
 
@@ -297,7 +298,7 @@ header .container {
 
 .cerrar {
 
-  margin-left: 90%;
+  margin-left: 85%;
   color:rgb(255, 0, 0);
   background-color: rgb(253, 213, 249);
   border: none;
