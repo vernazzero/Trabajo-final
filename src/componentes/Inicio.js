@@ -110,7 +110,7 @@ const Inicio = () =>{
 
 </motion.div>
 
-<motion.div className="mostrarMenu" cart={cart}
+<motion.div className="mostrarMenu"
 
       animate={isAbierto ? "abierto" : "cerrado"}
       variants={menu}
