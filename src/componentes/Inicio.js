@@ -48,6 +48,25 @@ const Inicio = () =>{
       
     }
 
+    const vaciarCarrito = ()=>{
+
+      cart.length = 0
+      borrarProducto()
+
+    }
+
+    const comprar = () =>{
+
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Compra exitosa!!',
+        showConfirmButton: true,
+        timer: 0
+      })
+
+    }
+
     const variants = {
       open: { opacity: 1, x: 0 },
       closed: { opacity: 0, x: "60vw" },
@@ -86,7 +105,7 @@ const Inicio = () =>{
       variants={variants}
       transition={{bounce: 0}}>
 
-      {cart.length > 0 ? <ProductosEnCarrito cart={cart} borrarProducto={borrarProducto} /> : <CarritoVacio/> }
+      {cart.length > 0 ? <ProductosEnCarrito cart={cart} borrarProducto={borrarProducto} comprar={comprar} vaciarCarrito={vaciarCarrito}/> : <CarritoVacio/> }
 
 </motion.div>
 

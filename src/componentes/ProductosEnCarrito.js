@@ -1,7 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Swal from 'sweetalert2'
+import CarritoVacio from "./CarritoVacio";
 
-const ProductosEnCarrito = ({cart, borrarProducto}) => {
+const ProductosEnCarrito = ({cart, borrarProducto, comprar, vaciarCarrito}) => {
 
     const [total, setTotal] = useState(0)
 
@@ -22,6 +24,8 @@ const ProductosEnCarrito = ({cart, borrarProducto}) => {
         <>
 
             <p className="precioTotal">Total:${total}</p>
+            <button className="btnComprar" onClick={comprar}>Comprar</button>
+            <button className="btnVaciar" onClick={vaciarCarrito}>Vaciar carrito</button>
 
         {cart.map(item => {
 
